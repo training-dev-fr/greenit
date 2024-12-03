@@ -1,0 +1,18 @@
+<div class="product-list">
+    @for(product of productList;track $index){
+    <div class="product">
+        <div class="picture">
+            <img src="http://localhost:3000{{product.picture}}">
+        </div>
+        <div class="content">
+            <div class="name">
+                {{product.name}}
+            </div>
+            <div class="ratings">
+                <div class="rate">{{product.avgRating}}</div>
+                <div class="vote">{{product.countRating}}</div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
